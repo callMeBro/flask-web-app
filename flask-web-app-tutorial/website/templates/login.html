@@ -1,0 +1,39 @@
+<!-- extend base.html so that this template is the exact same -->
+{% extends "base.html"%}
+{% block title %}Login
+{% endblock %}
+
+
+    <!-- add block to put content on the screen -->
+{% block content %}
+<form method ="POST">
+    <h3 align = "center"> Login</h3>
+    <div class = "form-group">
+        <label for="email">Email Address</label>
+        <input type="email.com" 
+        class="form-control" 
+        id="email" 
+        name="email" 
+        placeholder="Enter email"
+        />
+    </div>
+
+
+    <div class = "form-group">
+        <label for="password1">Password</label>
+        <input type="password" 
+        class="form-control" 
+        id="password1" 
+        name="password" 
+        placeholder="Enter password"
+        />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+<br />
+
+</form>
+
+
+<!-- {{ text }} -->
+{% endblock %}
